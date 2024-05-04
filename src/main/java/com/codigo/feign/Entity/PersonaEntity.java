@@ -1,9 +1,15 @@
 package com.codigo.feign.Entity;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.sql.Timestamp;
 
+@Entity
+@Getter
+@Setter
+@Table(name = "persona")
 public class PersonaEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
