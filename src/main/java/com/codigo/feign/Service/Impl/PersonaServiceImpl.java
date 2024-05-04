@@ -45,6 +45,6 @@ public class PersonaServiceImpl implements PersonaService {
 
     private ReniecResponse getExecution(String numero){
         String authorization = "Bearer "+ tokenApi;
-        return reniecClient.getInfo(numero,authorization);
+        return reniecClient.getInfoReniec(numero,authorization);
     }
 }

@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @FeignClient(name = "reniec-client",url = "https://api.apis.net.pe/v2/reniec/")
 public interface ReniecClient {
-    //https://api.apis.net.pe/v2/reniec/dni?numero=75878591
+    //https://api.apis.net.pe/v2/reniec/dni?numero=7587****
 
     @GetMapping("/dni")
-    ReniecResponse getInfo(@RequestParam("numero") String numero,
+    ReniecResponse getInfoReniec(@RequestParam("numero") String numero,
                            @RequestHeader("Authorization")String token);
 
 
